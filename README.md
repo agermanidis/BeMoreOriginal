@@ -1,4 +1,4 @@
-<img src='example.gif'></img>
+<img src='bemoreoriginal.gif'></img>
 
 # Be More Original
 
