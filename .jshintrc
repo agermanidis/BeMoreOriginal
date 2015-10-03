@@ -1,0 +1,16 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "undef": true,
+  "browserify": true,
+  "trailing": true,
+  "nonew": true,
+  "unused": true,
+  "globals": {
+    "chrome": true,
+    "$": true,
+    "console": true,
+    "window": true
+  }
+}

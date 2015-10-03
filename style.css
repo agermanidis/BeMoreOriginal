@@ -1,0 +1,23 @@
+.bmo-indicator-container {
+    height: 40px;
+}
+
+.bmo-indicator {
+    float: right;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bmo-loader {
+    width: 22px;
+    margin-left: 10px;
+}
+
+.bmo-success-or-fail {
+    width: 18px;
+    float: right;
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
