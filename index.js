@@ -63,22 +63,31 @@ function clearIndicator() {
 
 function updateOriginality(original) {
     if (lastText.length === 0) { return; }
+
+    var twitterSearchUrl = 'https://twitter.com/search?q="' + encodeURIComponent(lastText) + '"';
     
     if (original) {
         currentFocus.find(".bmo-indicator").html("Original Tweet").css({'color': 'green'}).append("<img class='bmo-success-or-fail' src='"+SUCCESS_ICON_URL+"'></img>");
         currentFocus.find(".js-tweet-btn").removeAttr("disabled");
         
     } else {
-        currentFocus.find(".bmo-indicator").html("Unoriginal Tweet").css({'color': 'red'}).append("<img class='bmo-success-or-fail' src='"+FAIL_ICON_URL+"'></img>");
+        currentFocus.find(".bmo-indicator").html("<a style='color: red;' target='_blank' href='"+twitterSearchUrl+"'>Unoriginal Tweet</a>").append("<img class='bmo-success-or-fail' src='"+FAIL_ICON_URL+"'></img>");
         currentFocus.find(".js-tweet-btn").attr("disabled", "disabled");
     }
 }
 
 var currentFocus = $(".tweet-box");
 
+function ensureIndicatorExists() {
+    var $el = currentFocus.find(".bmo-indicator");
+    if ($el.length === 0) {
+        currentFocus.find(".toolbar").prepend(INDICATOR_HTML);
+    }
+}
+
 $(document.body).on("focusin", ".tweet-box", function(evt) {
     currentFocus = $(evt.target).closest(".tweet-form");
-    console.log(currentFocus);
+    ensureIndicatorExists();
 });
 
 $(document.body).on("keyup", ".tweet-box", function() {

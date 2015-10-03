@@ -1,7 +1,7 @@
 {
-  "name": "Be More Original",
+  "name": "BeMoreOriginal",
   "description": "Stops you from posting unoriginal tweets",
-  "version": "0.1",
+  "version": "0.3",
   "permissions": ["activeTab", "http://agermanidis.com:5141/*"],
   "content_scripts": [
     {

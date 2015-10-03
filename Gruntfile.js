@@ -37,7 +37,11 @@ module.exports = function(grunt) {
       }
     },
     zip: {
-      'be_more_original.zip': ['dist/*']
+      'using-cwd': {
+        cwd: 'dist', 
+        src: ['dist/*'],
+        dest: 'be_more_original.zip'
+      },
     }
   });
 
