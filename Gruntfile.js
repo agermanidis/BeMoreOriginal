@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     zip: {
       'using-cwd': {
         cwd: 'dist', 
-        src: ['dist/*'],
+        src: ['dist/*', 'dist/images/*'],
         dest: 'be_more_original.zip'
       },
     }
