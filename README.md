@@ -10,6 +10,8 @@ forces you to be altruistic and contribute to humanity's collective
 expression by coming up with an original idea instead of appropriating
 one that already exists.
 
+[Link to download](https://chrome.google.com/webstore/detail/bemoreoriginal/lbijffbnmgpbighjgjkdafgfiabkbnni)
+
 ### License
 
 MIT
